@@ -42,7 +42,7 @@ app.get('/szolgaltatasok', (req, res) => {
     });
 });
 //3
-app.get('/szolgaltatasok/kereses/:szoveg', (req, res) => {
+app.get('/szolgaltatasok', (req, res) => {
     const sql = 'SELECT * FROM `szolgaltatasok`;';
     db.query(sql, (err, results) => {
         if (err) {
